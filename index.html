@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ismael Rodrigues — Gestão Estratégica de Tráfego. Estrutura antes da escala. Clareza técnica para pequenos e médios negócios." />
+    <title>Ismael Rodrigues | Gestão Estratégica de Tráfego</title>
+    <link rel="icon" href="/favicon-premium.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-premium-512.png">
+
+    <!-- Fonts: Plus Jakarta Sans (display) + Space Grotesk (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Space+Grotesk:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+      <div class="nav__container">
+        <a href="#hero" class="nav__logo" aria-label="Ismael Rodrigues — início">
+          <img src="logo.png" alt="Ismael Rodrigues" class="nav__logo-img" />
+        </a>
+
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a href="#quem-sou" class="nav__link">Sobre</a></li>
+          <li><a href="#pilares"  class="nav__link">Método</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#contato"  class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="hero__container">
+
+        <!-- Logo oficial -->
+        <div class="hero__logo-wrap fade-in" data-delay="0">
+          <img src="logo.png" alt="Ismael Rodrigues" class="hero__logo-img" />
+        </div>
+
+        <!-- Identidade -->
+        <div class="hero__identity fade-in" data-delay="200">
+          <h1 class="hero__name" id="heroTitle">ISMAEL RODRIGUES</h1>
+          <br>
+          <br>
+          <p class="hero__role">GESTÃO ESTRATÉGICA DE TRÁFEGO</p>
+        </div>
+
+        <!-- Divider -->
+        <div class="hero__divider fade-in" data-delay="350" aria-hidden="true"></div>
+
+        <!-- "Manual" como elemento de composição — não um botão -->
+        <div class="hero__manual fade-in" data-delay="500">
+          <span class="hero__manual-text">Manual de Identidade Visual e Estratégica</span>
+        </div>
+
+        <!-- Scroll Indicator com pulso tecnológico -->
+        <div class="hero__scroll fade-in" data-delay="700" id="scrollIndicator"
+             role="button" tabindex="0" aria-label="Rolar para explorar">
+          <div class="hero__scroll-wrapper" aria-hidden="true">
+            <span class="hero__scroll-arrow">↓</span>
+            <div class="hero__scroll-ring hero__scroll-ring--1"></div>
+            <div class="hero__scroll-ring hero__scroll-ring--2"></div>
+          </div>
+          <span class="hero__scroll-label">ROLE PARA EXPLORAR</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== QUEM SOU EU ===== -->
+    <section class="about" id="quem-sou" aria-labelledby="aboutTitle">
+      <div class="about__container">
+
+        <!-- Foto com moldura geométrica -->
+        <div class="about__photo-col reveal" data-reveal-delay="0">
+          <div class="about__photo-wrap">
+            <figure class="about__photo-frame">
+              <img src="pi.jpg" alt="Ismael Rodrigues, Gestor Estratégico de Tráfego" class="about__photo" />
+            </figure>
+            <div class="about__photo-accent" aria-hidden="true"></div>
+            <div class="about__photo-corner" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Texto de apresentação -->
+        <div class="about__content">
+          <span class="section-label reveal" data-reveal-delay="100">Quem sou eu</span>
+
+          <h2 class="about__title reveal" data-reveal-delay="180" id="aboutTitle">
+            Construção sólida.<br>
+            <span class="about__title-accent">Não promessas vazias.</span>
+          </h2>
+
+          <div class="about__divider reveal" data-reveal-delay="260" aria-hidden="true"></div>
+
+          <p class="about__text reveal" data-reveal-delay="340">
+            Sou <strong>Ismael Rodrigues</strong>, gestor estratégico de tráfego pago com foco em pequenos e médios negócios. Minha abordagem começa pela fundação — estrutura técnica correta, rastreamento preciso e processo documentado.
+          </p>
+
+          <p class="about__text reveal" data-reveal-delay="420">
+            Gestor jovem, com visão técnica e compromisso com resultado real. Não vendo milagre nem o próximo criativo viral. Vendo <strong>método</strong> — e método é o que permite escalar com segurança.
+          </p>
+
+          <div class="about__tags reveal" data-reveal-delay="500" aria-label="Especialidades">
+            <span class="about__tag">Estrutura técnica</span>
+            <span class="about__tag">Método documentado</span>
+            <span class="about__tag">Foco em PMEs</span>
+            <span class="about__tag">Resultados reais</span>
+          </div>
+
+          <a href="#pilares" class="btn btn--ghost reveal" data-reveal-delay="580">
+            <span>Conhecer o método</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== POSICIONAMENTO ESTRATÉGICO ===== -->
+    <section class="positioning" id="posicionamento" aria-labelledby="posTitle">
+      <div class="positioning__container">
+
+        <div class="positioning__content">
+          <span class="positioning__label reveal" data-reveal-delay="0">Estratégia &amp; Posicionamento</span>
+          <h2 class="positioning__title reveal" data-reveal-delay="100" id="posTitle">
+            <em>Organização<br>antes da escala.</em>
+          </h2>
+          <div class="positioning__divider reveal" data-reveal-delay="200" aria-hidden="true"></div>
+          <p class="positioning__text reveal" data-reveal-delay="300">
+            No tráfego pago, a maioria busca o atalho perfeito — o criativo viral, a campanha que explode. Aqui, o diferencial é outro: <strong>clareza técnica, estrutura sólida e segurança de processo</strong> para pequenos e médios negócios.
+          </p>
+          <p class="positioning__text reveal" data-reveal-delay="400">
+            Antes de escalar, é preciso entender o que está funcionando, o que está queimando orçamento e por quê. O hype passa. A estrutura fica.
+          </p>
+          <a href="#pilares" class="btn btn--outline reveal" data-reveal-delay="500">
+            CONHECER O MÉTODO
+          </a>
+        </div>
+
+        <div class="positioning__visual reveal" data-reveal-delay="150" aria-hidden="true">
+          <div class="positioning__badge">
+            <span class="positioning__badge-symbol">&#9670;</span>
+            <span class="positioning__badge-label">Estrutura<br>antes<br>do tráfego</span>
+          </div>
+          <div class="positioning__stats">
+            <div class="positioning__stat">
+              <span class="positioning__stat-value">ROAS</span>
+              <span class="positioning__stat-desc">Foco em retorno real</span>
+            </div>
+            <div class="positioning__stat">
+              <span class="positioning__stat-value">CTR</span>
+              <span class="positioning__stat-desc">Métricas sem vaidade</span>
+            </div>
+            <div class="positioning__stat">
+              <span class="positioning__stat-value">CPA</span>
+              <span class="positioning__stat-desc">Custo por aquisição</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== OS PILARES DO MÉTODO ===== -->
+    <section class="pillars" id="pilares" aria-labelledby="pillarsTitle">
+      <div class="pillars__container">
+
+        <header class="section-header reveal" data-reveal-delay="0">
+          <span class="section-label">Método</span>
+          <h2 class="section-title" id="pillarsTitle">Os Pilares do Método</h2>
+          <p class="section-subtitle">Cinco princípios que guiam cada decisão estratégica.</p>
+        </header>
+
+        <div class="pillars__grid">
+
+          <article class="pillar-card reveal" data-reveal-delay="0" tabindex="0" aria-label="Pilar 1: Educação Técnica">
+            <span class="pillar-card__number" aria-hidden="true">01</span>
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Educação Técnica</h3>
+            <p class="pillar-card__text">Tornar o complexo acessível. O cliente entende o que está sendo feito e por quê — sem caixa-preta.</p>
+          </article>
+
+          <article class="pillar-card reveal" data-reveal-delay="80" tabindex="0" aria-label="Pilar 2: Antítese do Erro">
+            <span class="pillar-card__number" aria-hidden="true">02</span>
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="15.5" r=".5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Antítese do Erro</h3>
+            <p class="pillar-card__text">Apertar o botão impulsionar é queimar dinheiro. Cada centavo precisa de objetivo, segmentação e estrutura.</p>
+          </article>
+
+          <article class="pillar-card reveal" data-reveal-delay="160" tabindex="0" aria-label="Pilar 3: Transparência de Processo">
+            <span class="pillar-card__number" aria-hidden="true">03</span>
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Transparência de Processo</h3>
+            <p class="pillar-card__text">Método antes de resultado. Relatórios claros, comunicação direta e nenhuma promessa inflada.</p>
+          </article>
+
+          <article class="pillar-card reveal" data-reveal-delay="240" tabindex="0" aria-label="Pilar 4: Métricas Reais">
+            <span class="pillar-card__number" aria-hidden="true">04</span>
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Métricas Reais</h3>
+            <p class="pillar-card__text">Foco em ROAS, CTR e CPA. Zero métricas de vaidade. Dados que movem decisões, não dashboards bonitos.</p>
+          </article>
+
+          <article class="pillar-card reveal" data-reveal-delay="320" tabindex="0" aria-label="Pilar 5: Diagnóstico Primeiro">
+            <span class="pillar-card__number" aria-hidden="true">05</span>
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Diagnóstico Primeiro</h3>
+            <p class="pillar-card__text">Auditoria antes da execução. Entender o cenário atual é o primeiro passo para qualquer estratégia real.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS E OFERTAS ===== -->
+    <section class="services" id="servicos" aria-labelledby="servicesTitle">
+      <div class="services__container">
+
+        <header class="section-header reveal" data-reveal-delay="0">
+          <span class="section-label">Serviços</span>
+          <h2 class="section-title" id="servicesTitle">O que posso fazer por você</h2>
+          <p class="section-subtitle">Serviços desenhados para cada estágio do seu negócio digital.</p>
+        </header>
+
+        <div class="services__grid">
+
+          <div class="service-card reveal" data-reveal-delay="0">
+            <div class="service-card__header">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <span class="service-card__tag">Fundação</span>
+            </div>
+            <h3 class="service-card__title">Setup Estrutural</h3>
+            <p class="service-card__text">Instalação e configuração de Pixels, APIs de Conversão e rastreamento avançado. A base técnica correta para campanhas que realmente convertem.</p>
+            <ul class="service-card__list" aria-label="Inclui">
+              <li>Meta Pixel &amp; CAPI</li>
+              <li>Google Tag Manager</li>
+              <li>Conversões offline</li>
+              <li>Auditoria de rastreamento</li>
+            </ul>
+            <a href="#contato" class="btn btn--card-cta">Solicitar Diagnóstico</a>
+          </div>
+
+          <div class="service-card service-card--featured reveal" data-reveal-delay="100">
+            <div class="service-card__badge">Mais contratado</div>
+            <div class="service-card__header">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <span class="service-card__tag service-card__tag--highlight">Gestão Contínua</span>
+            </div>
+            <h3 class="service-card__title">Gestão Mensal</h3>
+            <p class="service-card__text">Acompanhamento contínuo das suas campanhas. Otimização semanal, relatórios claros e estratégia adaptada ao seu momento de negócio.</p>
+            <ul class="service-card__list" aria-label="Inclui">
+              <li>Criação e gestão de campanhas</li>
+              <li>Relatório semanal de resultados</li>
+              <li>Otimização de audiências</li>
+              <li>Suporte direto via WhatsApp</li>
+            </ul>
+            <a href="#contato" class="btn btn--card-cta">Solicitar Diagnóstico</a>
+          </div>
+
+          <div class="service-card reveal" data-reveal-delay="200">
+            <div class="service-card__header">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                  <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                </svg>
+              </div>
+              <span class="service-card__tag">Análise</span>
+            </div>
+            <h3 class="service-card__title">Diagnóstico de Conta</h3>
+            <p class="service-card__text">Auditoria completa dos seus gargalos de performance. Identifique onde o dinheiro está sendo desperdiçado e receba um plano de ação concreto.</p>
+            <ul class="service-card__list" aria-label="Inclui">
+              <li>Análise estrutural de campanhas</li>
+              <li>Mapeamento de vazamentos de verba</li>
+              <li>Relatório de gargalos técnicos</li>
+              <li>Plano de ação priorizado</li>
+            </ul>
+            <a href="#contato" class="btn btn--card-cta">Solicitar Diagnóstico</a>
+          </div>
+
+          <div class="service-card reveal" data-reveal-delay="300">
+            <div class="service-card__header">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                </svg>
+              </div>
+              <span class="service-card__tag">Pontual</span>
+            </div>
+            <h3 class="service-card__title">Consultoria Estratégica</h3>
+            <p class="service-card__text">Sessão estratégica focada no seu desafio específico. Decisões mais inteligentes com quem já viu esse problema antes.</p>
+            <ul class="service-card__list" aria-label="Inclui">
+              <li>Sessão de 90 minutos</li>
+              <li>Análise do cenário atual</li>
+              <li>Estratégia personalizada</li>
+              <li>Documento de encaminhamento</li>
+            </ul>
+            <a href="#contato" class="btn btn--card-cta">Solicitar Diagnóstico</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO — CENTRAL DE COMANDO ===== -->
+    <section class="contact" id="contato" aria-labelledby="contactTitle">
+      <div class="contact__container">
+
+        <header class="section-header reveal" data-reveal-delay="0">
+          <span class="section-label">Contato</span>
+          <h2 class="section-title contact__heading" id="contactTitle">
+            Vamos construir<br>algo real?
+          </h2>
+          <p class="section-subtitle">Diagnóstico gratuito. Sem compromisso. Com método.</p>
+        </header>
+
+        <!-- Painel glassmorphism -->
+        <div class="contact__panel reveal" data-reveal-delay="150">
+
+          <!-- Esquerda: informações e status -->
+          <div class="contact__info">
+            <div class="contact__status" role="status" aria-live="polite">
+              <span class="contact__status-dot" aria-hidden="true"></span>
+              <span class="contact__status-text">Disponível para novos projetos</span>
+            </div>
+
+            <div class="contact__divider" aria-hidden="true"></div>
+
+            <ul class="contact__meta" aria-label="Informações de contato">
+              <li class="contact__meta-item">
+                <div class="contact__meta-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="contact__meta-body">
+                  <span class="contact__meta-label">Tempo de resposta</span>
+                  <span class="contact__meta-value">Em até 24 horas</span>
+                </div>
+              </li>
+              <li class="contact__meta-item">
+                <div class="contact__meta-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="10 8 16 12 10 16 10 8"/>
+                  </svg>
+                </div>
+                <div class="contact__meta-body">
+                  <span class="contact__meta-label">Foco de atuação</span>
+                  <span class="contact__meta-value">Pequenos e médios negócios</span>
+                </div>
+              </li>
+              <li class="contact__meta-item">
+                <div class="contact__meta-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact__meta-body">
+                  <span class="contact__meta-label">Atendimento</span>
+                  <span class="contact__meta-value">Todo o Brasil · Remoto</span>
+                </div>
+              </li>
+              <li class="contact__meta-item">
+                <div class="contact__meta-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.12 1.18 2 2 0 012.1.01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/>
+                  </svg>
+                </div>
+                <div class="contact__meta-body">
+                  <span class="contact__meta-label">Plataformas</span>
+                  <span class="contact__meta-value">Meta Ads · Google Ads · TikTok Ads</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Divisor vertical -->
+          <div class="contact__panel-divider" aria-hidden="true"></div>
+
+          <!-- Direita: CTA principal -->
+          <div class="contact__action">
+            <div class="contact__cta-box">
+              <p class="contact__cta-eyebrow">Primeiro passo</p>
+              <h3 class="contact__cta-title">Diagnóstico gratuito da sua conta</h3>
+              <p class="contact__cta-sub">
+                Analiso sua estrutura de campanhas, identifico os gargalos técnicos e te apresento um caminho claro — sem compromisso de contratação.
+              </p>
+
+              <a href="https://wa.me/553799344500" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                FALAR NO WHATSAPP
+              </a>
+
+              <div class="contact__social-row">
+                <span class="contact__social-label">Ou me encontre em:</span>
+                <div class="contact__social">
+                  <a href="#" class="contact__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                  <a href="#" class="contact__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                      <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                    </svg>
+                    <span class="visually-hidden">LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.contact__panel -->
+
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer__container">
+
+        <!-- Linha superior: logo + proposta de valor -->
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img src="logo.png" alt="Ismael Rodrigues" class="footer__logo" />
+          </div>
+
+          <p class="footer__proposition">
+            <span>Estrutura de campanhas</span>
+            <span class="footer__dot" aria-hidden="true">·</span>
+            <span>Configuração técnica</span>
+            <span class="footer__dot" aria-hidden="true">·</span>
+            <span>Transparência</span>
+            <span class="footer__dot" aria-hidden="true">·</span>
+            <span>Atendimento próximo</span>
+          </p>
+        </div>
+
+        <!-- Divisor -->
+        <div class="footer__rule" aria-hidden="true"></div>
+
+        <!-- Linha inferior: copyright + crédito de desenvolvimento -->
+        <div class="footer__bottom">
+          <p class="footer__legal">
+            &copy; 2026 Ismael Rodrigues. Todos os direitos reservados.
+            Proibida a reprodução total ou parcial sem autorização prévia.
+          </p>
+
+          <p class="footer__dev">
+            Desenvolvido por
+            <a
+              href="https://www.linkedin.com/in/heliojunior1218/"
+              class="footer__dev-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hélio Júnior — perfil no LinkedIn"
+            >Hélio Júnior</a>
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
