@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-profile" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="3" />
+    <path d="M5 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1" />
+  </symbol>
+
+  <symbol id="icon-diagnosis" viewBox="0 0 24 24">
+    <path d="M3 3v18h18" />
+    <polyline points="7 14 11 10 14 12 19 7" />
+    <circle cx="19" cy="7" r="1" />
+  </symbol>
+
+  <symbol id="icon-implementation" viewBox="0 0 24 24">
+    <path d="M2 12l20-8-8 20-2-8-8-2z" />
+  </symbol>
+
+  <symbol id="icon-one-platform" viewBox="0 0 24 24">
+    <line x1="4" y1="21" x2="4" y2="14" />
+    <line x1="12" y1="21" x2="12" y2="10" />
+    <line x1="20" y1="21" x2="20" y2="6" />
+  </symbol>
+
+  <symbol id="icon-full-management" viewBox="0 0 24 24">
+    <circle cx="6" cy="12" r="2" />
+    <circle cx="12" cy="6" r="2" />
+    <circle cx="18" cy="12" r="2" />
+    <circle cx="12" cy="18" r="2" />
+    <path d="M7.5 10.5l3-3m3 0l3 3m0 3l-3 3m-3 0l-3-3" />
+  </symbol>
+
+  <symbol id="icon-question" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" />
+    <line x1="12" y1="9" x2="12" y2="13" />
+    <circle cx="12" cy="17" r="0.8" fill="currentColor" />
+  </symbol>
+
+  <symbol id="icon-cta" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="8" />
+    <line x1="12" y1="12" x2="17" y2="7" />
+    <line x1="12" y1="12" x2="9" y2="15" />
+  </symbol>
+
+  <symbol id="icon-direction" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" />
+    <polyline points="12 7 12 12 16 14" />
+  </symbol>
+
+  <symbol id="icon-structure" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="7" height="7" />
+    <rect x="14" y="3" width="7" height="7" />
+    <rect x="3" y="14" width="7" height="7" />
+    <rect x="14" y="14" width="7" height="7" />
+  </symbol>
+
+  <symbol id="icon-execution" viewBox="0 0 24 24">
+    <path d="M2 12l20-8-8 20-2-8-8-2z" />
+  </symbol>
+
+  <symbol id="icon-reading" viewBox="0 0 24 24">
+    <line x1="4" y1="20" x2="20" y2="20" />
+    <line x1="7" y1="20" x2="7" y2="12" />
+    <line x1="12" y1="20" x2="12" y2="8" />
+    <line x1="17" y1="20" x2="17" y2="5" />
+  </symbol>
+
+  <symbol id="icon-optimization" viewBox="0 0 24 24">
+    <polyline points="4 14 9 9 13 13 20 6" />
+    <polyline points="14 6 20 6 20 12" />
+  </symbol>
+</svg>
