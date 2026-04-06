@@ -797,14 +797,13 @@ figure { margin: 0; }
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--space-4);
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .services__grid .service-card { grid-column: span 2; }
-.services__grid .service-card:nth-child(5) { grid-column: 2 / span 2; }
-.services__grid .service-card:nth-child(6) { grid-column: 4 / span 2; }
-.services__grid .service-card:nth-child(7) { grid-column: 6 / span 2; }
 
 .service-card {
   background: rgba(255,255,255,0.03);
