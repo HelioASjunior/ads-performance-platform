@@ -1031,17 +1031,21 @@ figure { margin: 0; }
 }
 
 .contact__social-row {
-  display: flex; align-items: center; gap: var(--space-4);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-3) var(--space-4);
+  flex-wrap: wrap;
   padding-top: var(--space-4);
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .contact__social-label {
   font-family: var(--font-body); font-size: var(--fs-sm);
-  color: var(--color-text-subtle); white-space: nowrap;
+  color: var(--color-text-subtle); white-space: normal;
 }
 
-.contact__social { display: flex; align-items: center; gap: var(--space-3); }
+.contact__social {
+  display: flex; align-items: center; gap: var(--space-3);
+  margin-left: auto;
+}
 
 .contact__social-link {
   display: flex; align-items: center; justify-content: center;
@@ -1207,6 +1211,8 @@ figure { margin: 0; }
   .hero__manual-text { font-size: 0.55rem; }
   .footer__proposition { flex-direction: column; gap: var(--space-2); }
   .footer__dot { display: none; }
+  .contact__social-row { justify-content: flex-start; }
+  .contact__social { margin-left: 0; }
 }
 
 /* ── 17. REDUCED MOTION ── */
