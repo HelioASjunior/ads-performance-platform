@@ -33,6 +33,7 @@ export class CustomCursor {
     if (!window.matchMedia('(pointer: fine)').matches) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+    document.documentElement.classList.add('has-custom-cursor');
     this.#createElements();
     this.#bindEvents();
     this.#startLoop();
@@ -80,11 +81,13 @@ export class CustomCursor {
     // Click — pulso de contração
     window.addEventListener('mousedown', () => this.#ring.classList.add('is-clicking'));
     window.addEventListener('mouseup',   () => this.#ring.classList.remove('is-clicking'));
+    window.addEventListener('blur',      () => this.#ring.classList.remove('is-clicking'));
 
     // Sai da janela — esconde cursor
     document.addEventListener('mouseleave', () => {
       this.#dot.classList.add('is-hidden');
       this.#ring.classList.add('is-hidden');
+      this.#ring.classList.remove('is-clicking');
     });
 
     document.addEventListener('mouseenter', () => {
@@ -110,6 +113,7 @@ export class CustomCursor {
   /** Para o loop de animação (para limpeza de memória se necessário). */
   destroy() {
     if (this.#rafId) cancelAnimationFrame(this.#rafId);
+    document.documentElement.classList.remove('has-custom-cursor');
     this.#dot?.remove();
     this.#ring?.remove();
   }

@@ -123,7 +123,9 @@ figure { margin: 0; }
 
 /* ── 4. CUSTOM CURSOR ── */
 @media (pointer: fine) {
-  *, *::before, *::after { cursor: none !important; }
+  html.has-custom-cursor *,
+  html.has-custom-cursor *::before,
+  html.has-custom-cursor *::after { cursor: none !important; }
 
   .cursor-dot {
     position: fixed;
@@ -1218,8 +1220,8 @@ figure { margin: 0; }
 /* ── 17. REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+    animation: none !important;
+    transition: none !important;
   }
   .fade-in, .reveal { opacity: 1; transform: none; }
 }
