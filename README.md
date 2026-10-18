@@ -10,8 +10,10 @@ Site de página única em HTML puro, sem frameworks nem build. Todo o CSS, o Jav
 
 ```
 ├── index.html               # Página completa (HTML + CSS + JS + imagens embutidas)
-├── favicon-premium.ico      # Favicon
-├── favicon-premium-512.png  # Ícone 512x512 (favicon, apple-touch-icon e og:image)
+├── favicon.ico              # Favicon (16/32/48 px)
+├── favicon-512.png          # Favicon 512x512
+├── apple-touch-icon.png     # Ícone para iPhone (180x180)
+├── og-image.jpg             # Prévia de compartilhamento (1200x630)
 ├── robots.txt               # Regras para buscadores + link do sitemap
 ├── sitemap.xml              # Sitemap do domínio ismaelrodrigues.com.br
 └── vercel.json              # Configuração de deploy na Vercel
