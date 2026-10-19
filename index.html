@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Ismael Rodrigues · Anúncios e conteúdo para negócios locais</title>
-<meta name="description" content="Ismael Rodrigues cuida dos anúncios, do perfil e do conteúdo de restaurantes e negócios locais em Goiânia, com método, dados reais e IA usada de forma profissional.">
+<meta name="description" content="Ismael Rodrigues cuida dos anúncios, do perfil e do conteúdo de restaurantes e negócios locais em Goiânia, com método, dados reais e estudo constante.">
 <meta property="og:title" content="Ismael Rodrigues · Anúncios e conteúdo para negócios locais">
-<meta property="og:description" content="Anúncios, conteúdo e IA com método para negócios locais em Goiânia.">
+<meta property="og:description" content="Anúncios e conteúdo com método para negócios locais em Goiânia.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#02261E">
 <link rel="canonical" href="https://ismaelrodrigues.com.br/">
@@ -275,7 +275,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .term-top b{width:10px;height:10px;border-radius:50%;background:rgba(242,247,249,.18)}
 .term-top b:nth-child(1){background:#ff7b72}.term-top b:nth-child(2){background:var(--mindaro)}.term-top b:nth-child(3){background:var(--half)}
 .term-top span{margin-left:auto}
-.term-body{padding:18px;font-family:var(--mono);font-size:13px;line-height:1.75;min-height:360px;flex:1;color:var(--on-night)}
+.term-body{padding:18px;font-family:var(--mono);font-size:13px;line-height:1.75;min-height:380px;overflow-x:auto;flex:1;color:var(--on-night)}
 .ln{white-space:pre-wrap;word-break:break-word}
 .c-mut{color:var(--on-night-muted)} .c-acc{color:var(--mindaro)} .c-teal{color:var(--half)} .c-warn{color:#ffb4a8}
 .caret{display:inline-block;width:8px;height:1.1em;background:var(--mindaro);vertical-align:-3px;animation:blink 1s steps(1) infinite}
@@ -297,6 +297,28 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .vs-am .ic{background:#ffb4a8}
 .vs-note{font-size:14px}
 
+.study-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:20px;margin-top:48px;align-items:stretch}
+@media (max-width:940px){.study-grid{grid-template-columns:1fr}}
+.log{background:var(--night-2);border:1px solid rgba(242,247,249,.09);border-radius:20px;overflow:hidden;min-width:0}
+.log-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid rgba(242,247,249,.07);font-family:var(--mono);font-size:12px;color:var(--on-night-muted)}
+.quests{list-style:none;margin:0;padding:8px 18px 18px;display:flex;flex-direction:column}
+.quests li{display:grid;grid-template-columns:118px 1fr;gap:16px;padding:16px 0;border-bottom:1px dashed rgba(242,247,249,.1)}
+.quests li:last-child{border-bottom:0}
+@media (max-width:540px){.quests li{grid-template-columns:1fr;gap:8px}}
+.quests h3{font-size:17px;color:var(--on-night)}
+.quests p{font-size:14.5px;margin-top:4px}
+.st{align-self:start;justify-self:start;font-family:var(--mono);font-size:11px;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.st.now{background:var(--mindaro);color:var(--holly)}
+.st.done{background:rgba(137,201,201,.18);color:var(--half);border:1px solid rgba(137,201,201,.4)}
+.pb{margin-top:10px;height:6px;border-radius:4px;background:rgba(242,247,249,.08);overflow:hidden;max-width:320px}
+.pb i{display:block;height:100%;width:var(--v);background:linear-gradient(90deg,var(--half),var(--mindaro));border-radius:4px}
+.gain{background:var(--mindaro);color:var(--holly);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.gain .k{font-family:var(--mono);font-size:12px;color:var(--teal)}
+.gain h3{font-size:22px;line-height:1.2}
+.gain ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:15.5px}
+.gain li{display:flex;gap:10px}
+.gain li::before{content:"✦";color:var(--teal);flex-shrink:0}
+.dark .gain .note,.gain .note{font-size:14px;color:rgba(2,38,30,.75);margin-top:auto}
 /* campanha: rolagem horizontal fixada */
 .camp{padding-block:0}
 .camp-pin{position:relative}
@@ -375,6 +397,92 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid rgba(242,247,249,.25
 .burst{position:absolute;left:50%;top:85px;width:0;height:0;pointer-events:none}
 .burst i{position:absolute;width:8px;height:8px;border-radius:2px;background:var(--mindaro);animation:fly .9s ease-out forwards}
 @keyframes fly{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+.fl{display:none}
+#op-20:checked ~ .rv .fl-1{display:inline}
+#op-7:checked ~ .rv .fl-2{display:inline}
+#op-7:checked ~ .rv .pips .p7{background:var(--half);color:var(--holly)}
+#op-13:checked ~ .rv .fl-3{display:inline}
+#op-13:checked ~ .rv .pips .p7, #op-13:checked ~ .rv .pips .p13{background:var(--half);color:var(--holly)}
+#op-2:checked ~ .rv .fl-4{display:inline}
+#op-2:checked ~ .rv .pips .p7, #op-2:checked ~ .rv .pips .p13, #op-2:checked ~ .rv .pips .p2{background:var(--half);color:var(--holly)}
+#op-18:checked ~ .rv .fl-5{display:inline}
+#op-18:checked ~ .rv .pips .p7, #op-18:checked ~ .rv .pips .p13, #op-18:checked ~ .rv .pips .p2, #op-18:checked ~ .rv .pips .p18{background:var(--half);color:var(--holly)}
+#op-5:checked ~ .rv .fl-6{display:inline}
+#op-5:checked ~ .rv .pips .p7, #op-5:checked ~ .rv .pips .p13, #op-5:checked ~ .rv .pips .p2, #op-5:checked ~ .rv .pips .p18, #op-5:checked ~ .rv .pips .p5{background:var(--half);color:var(--holly)}
+#op-11:checked ~ .rv .fl-7{display:inline}
+#op-11:checked ~ .rv .pips .p7, #op-11:checked ~ .rv .pips .p13, #op-11:checked ~ .rv .pips .p2, #op-11:checked ~ .rv .pips .p18, #op-11:checked ~ .rv .pips .p5, #op-11:checked ~ .rv .pips .p11{background:var(--half);color:var(--holly)}
+#op-16:checked ~ .rv .fl-8{display:inline}
+#op-16:checked ~ .rv .pips .p7, #op-16:checked ~ .rv .pips .p13, #op-16:checked ~ .rv .pips .p2, #op-16:checked ~ .rv .pips .p18, #op-16:checked ~ .rv .pips .p5, #op-16:checked ~ .rv .pips .p11, #op-16:checked ~ .rv .pips .p16{background:var(--half);color:var(--holly)}
+#op-1:checked ~ .rv .fl-9{display:inline}
+#op-1:checked ~ .rv .pips .p7, #op-1:checked ~ .rv .pips .p13, #op-1:checked ~ .rv .pips .p2, #op-1:checked ~ .rv .pips .p18, #op-1:checked ~ .rv .pips .p5, #op-1:checked ~ .rv .pips .p11, #op-1:checked ~ .rv .pips .p16, #op-1:checked ~ .rv .pips .p1{background:var(--half);color:var(--holly)}
+#op-9:checked ~ .rv .fl-10{display:inline}
+#op-9:checked ~ .rv .pips .p7, #op-9:checked ~ .rv .pips .p13, #op-9:checked ~ .rv .pips .p2, #op-9:checked ~ .rv .pips .p18, #op-9:checked ~ .rv .pips .p5, #op-9:checked ~ .rv .pips .p11, #op-9:checked ~ .rv .pips .p16, #op-9:checked ~ .rv .pips .p1, #op-9:checked ~ .rv .pips .p9{background:var(--half);color:var(--holly)}
+#op-14:checked ~ .rv .fl-11{display:inline}
+#op-14:checked ~ .rv .pips .p7, #op-14:checked ~ .rv .pips .p13, #op-14:checked ~ .rv .pips .p2, #op-14:checked ~ .rv .pips .p18, #op-14:checked ~ .rv .pips .p5, #op-14:checked ~ .rv .pips .p11, #op-14:checked ~ .rv .pips .p16, #op-14:checked ~ .rv .pips .p1, #op-14:checked ~ .rv .pips .p9, #op-14:checked ~ .rv .pips .p14{background:var(--half);color:var(--holly)}
+#op-4:checked ~ .rv .fl-12{display:inline}
+#op-4:checked ~ .rv .pips .p7, #op-4:checked ~ .rv .pips .p13, #op-4:checked ~ .rv .pips .p2, #op-4:checked ~ .rv .pips .p18, #op-4:checked ~ .rv .pips .p5, #op-4:checked ~ .rv .pips .p11, #op-4:checked ~ .rv .pips .p16, #op-4:checked ~ .rv .pips .p1, #op-4:checked ~ .rv .pips .p9, #op-4:checked ~ .rv .pips .p14, #op-4:checked ~ .rv .pips .p4{background:var(--half);color:var(--holly)}
+#op-19:checked ~ .rv .fl-13{display:inline}
+#op-19:checked ~ .rv .pips .p7, #op-19:checked ~ .rv .pips .p13, #op-19:checked ~ .rv .pips .p2, #op-19:checked ~ .rv .pips .p18, #op-19:checked ~ .rv .pips .p5, #op-19:checked ~ .rv .pips .p11, #op-19:checked ~ .rv .pips .p16, #op-19:checked ~ .rv .pips .p1, #op-19:checked ~ .rv .pips .p9, #op-19:checked ~ .rv .pips .p14, #op-19:checked ~ .rv .pips .p4, #op-19:checked ~ .rv .pips .p19{background:var(--half);color:var(--holly)}
+#op-8:checked ~ .rv .fl-14{display:inline}
+#op-8:checked ~ .rv .pips .p7, #op-8:checked ~ .rv .pips .p13, #op-8:checked ~ .rv .pips .p2, #op-8:checked ~ .rv .pips .p18, #op-8:checked ~ .rv .pips .p5, #op-8:checked ~ .rv .pips .p11, #op-8:checked ~ .rv .pips .p16, #op-8:checked ~ .rv .pips .p1, #op-8:checked ~ .rv .pips .p9, #op-8:checked ~ .rv .pips .p14, #op-8:checked ~ .rv .pips .p4, #op-8:checked ~ .rv .pips .p19, #op-8:checked ~ .rv .pips .p8{background:var(--half);color:var(--holly)}
+#op-12:checked ~ .rv .fl-15{display:inline}
+#op-12:checked ~ .rv .pips .p7, #op-12:checked ~ .rv .pips .p13, #op-12:checked ~ .rv .pips .p2, #op-12:checked ~ .rv .pips .p18, #op-12:checked ~ .rv .pips .p5, #op-12:checked ~ .rv .pips .p11, #op-12:checked ~ .rv .pips .p16, #op-12:checked ~ .rv .pips .p1, #op-12:checked ~ .rv .pips .p9, #op-12:checked ~ .rv .pips .p14, #op-12:checked ~ .rv .pips .p4, #op-12:checked ~ .rv .pips .p19, #op-12:checked ~ .rv .pips .p8, #op-12:checked ~ .rv .pips .p12{background:var(--half);color:var(--holly)}
+#op-3:checked ~ .rv .fl-16{display:inline}
+#op-3:checked ~ .rv .pips .p7, #op-3:checked ~ .rv .pips .p13, #op-3:checked ~ .rv .pips .p2, #op-3:checked ~ .rv .pips .p18, #op-3:checked ~ .rv .pips .p5, #op-3:checked ~ .rv .pips .p11, #op-3:checked ~ .rv .pips .p16, #op-3:checked ~ .rv .pips .p1, #op-3:checked ~ .rv .pips .p9, #op-3:checked ~ .rv .pips .p14, #op-3:checked ~ .rv .pips .p4, #op-3:checked ~ .rv .pips .p19, #op-3:checked ~ .rv .pips .p8, #op-3:checked ~ .rv .pips .p12, #op-3:checked ~ .rv .pips .p3{background:var(--half);color:var(--holly)}
+#op-17:checked ~ .rv .fl-17{display:inline}
+#op-17:checked ~ .rv .pips .p7, #op-17:checked ~ .rv .pips .p13, #op-17:checked ~ .rv .pips .p2, #op-17:checked ~ .rv .pips .p18, #op-17:checked ~ .rv .pips .p5, #op-17:checked ~ .rv .pips .p11, #op-17:checked ~ .rv .pips .p16, #op-17:checked ~ .rv .pips .p1, #op-17:checked ~ .rv .pips .p9, #op-17:checked ~ .rv .pips .p14, #op-17:checked ~ .rv .pips .p4, #op-17:checked ~ .rv .pips .p19, #op-17:checked ~ .rv .pips .p8, #op-17:checked ~ .rv .pips .p12, #op-17:checked ~ .rv .pips .p3, #op-17:checked ~ .rv .pips .p17{background:var(--half);color:var(--holly)}
+#op-6:checked ~ .rv .fl-18{display:inline}
+#op-6:checked ~ .rv .pips .p7, #op-6:checked ~ .rv .pips .p13, #op-6:checked ~ .rv .pips .p2, #op-6:checked ~ .rv .pips .p18, #op-6:checked ~ .rv .pips .p5, #op-6:checked ~ .rv .pips .p11, #op-6:checked ~ .rv .pips .p16, #op-6:checked ~ .rv .pips .p1, #op-6:checked ~ .rv .pips .p9, #op-6:checked ~ .rv .pips .p14, #op-6:checked ~ .rv .pips .p4, #op-6:checked ~ .rv .pips .p19, #op-6:checked ~ .rv .pips .p8, #op-6:checked ~ .rv .pips .p12, #op-6:checked ~ .rv .pips .p3, #op-6:checked ~ .rv .pips .p17, #op-6:checked ~ .rv .pips .p6{background:var(--half);color:var(--holly)}
+#op-15:checked ~ .rv .fl-19{display:inline}
+#op-15:checked ~ .rv .pips .p7, #op-15:checked ~ .rv .pips .p13, #op-15:checked ~ .rv .pips .p2, #op-15:checked ~ .rv .pips .p18, #op-15:checked ~ .rv .pips .p5, #op-15:checked ~ .rv .pips .p11, #op-15:checked ~ .rv .pips .p16, #op-15:checked ~ .rv .pips .p1, #op-15:checked ~ .rv .pips .p9, #op-15:checked ~ .rv .pips .p14, #op-15:checked ~ .rv .pips .p4, #op-15:checked ~ .rv .pips .p19, #op-15:checked ~ .rv .pips .p8, #op-15:checked ~ .rv .pips .p12, #op-15:checked ~ .rv .pips .p3, #op-15:checked ~ .rv .pips .p17, #op-15:checked ~ .rv .pips .p6, #op-15:checked ~ .rv .pips .p15{background:var(--half);color:var(--holly)}
+#op-10:checked ~ .rv .fl-20{display:inline}
+#op-10:checked ~ .rv .pips .p7, #op-10:checked ~ .rv .pips .p13, #op-10:checked ~ .rv .pips .p2, #op-10:checked ~ .rv .pips .p18, #op-10:checked ~ .rv .pips .p5, #op-10:checked ~ .rv .pips .p11, #op-10:checked ~ .rv .pips .p16, #op-10:checked ~ .rv .pips .p1, #op-10:checked ~ .rv .pips .p9, #op-10:checked ~ .rv .pips .p14, #op-10:checked ~ .rv .pips .p4, #op-10:checked ~ .rv .pips .p19, #op-10:checked ~ .rv .pips .p8, #op-10:checked ~ .rv .pips .p12, #op-10:checked ~ .rv .pips .p3, #op-10:checked ~ .rv .pips .p17, #op-10:checked ~ .rv .pips .p6, #op-10:checked ~ .rv .pips .p15, #op-10:checked ~ .rv .pips .p10{background:var(--half);color:var(--holly)}
+.pips .p20{background:var(--mindaro);color:var(--holly)}
+.dl{display:none}
+.oc{display:none;flex-direction:column;gap:16px;animation:fadein .4s ease}
+#op-1:checked ~ .table .d20box .dl-1{display:block}
+#op-1:checked ~ .table .op-card .oc-1{display:flex}
+#op-2:checked ~ .table .d20box .dl-2{display:block}
+#op-2:checked ~ .table .op-card .oc-2{display:flex}
+#op-3:checked ~ .table .d20box .dl-3{display:block}
+#op-3:checked ~ .table .op-card .oc-3{display:flex}
+#op-4:checked ~ .table .d20box .dl-4{display:block}
+#op-4:checked ~ .table .op-card .oc-4{display:flex}
+#op-5:checked ~ .table .d20box .dl-5{display:block}
+#op-5:checked ~ .table .op-card .oc-5{display:flex}
+#op-6:checked ~ .table .d20box .dl-6{display:block}
+#op-6:checked ~ .table .op-card .oc-6{display:flex}
+#op-7:checked ~ .table .d20box .dl-7{display:block}
+#op-7:checked ~ .table .op-card .oc-7{display:flex}
+#op-8:checked ~ .table .d20box .dl-8{display:block}
+#op-8:checked ~ .table .op-card .oc-8{display:flex}
+#op-9:checked ~ .table .d20box .dl-9{display:block}
+#op-9:checked ~ .table .op-card .oc-9{display:flex}
+#op-10:checked ~ .table .d20box .dl-10{display:block}
+#op-10:checked ~ .table .op-card .oc-10{display:flex}
+#op-11:checked ~ .table .d20box .dl-11{display:block}
+#op-11:checked ~ .table .op-card .oc-11{display:flex}
+#op-12:checked ~ .table .d20box .dl-12{display:block}
+#op-12:checked ~ .table .op-card .oc-12{display:flex}
+#op-13:checked ~ .table .d20box .dl-13{display:block}
+#op-13:checked ~ .table .op-card .oc-13{display:flex}
+#op-14:checked ~ .table .d20box .dl-14{display:block}
+#op-14:checked ~ .table .op-card .oc-14{display:flex}
+#op-15:checked ~ .table .d20box .dl-15{display:block}
+#op-15:checked ~ .table .op-card .oc-15{display:flex}
+#op-16:checked ~ .table .d20box .dl-16{display:block}
+#op-16:checked ~ .table .op-card .oc-16{display:flex}
+#op-17:checked ~ .table .d20box .dl-17{display:block}
+#op-17:checked ~ .table .op-card .oc-17{display:flex}
+#op-18:checked ~ .table .d20box .dl-18{display:block}
+#op-18:checked ~ .table .op-card .oc-18{display:flex}
+#op-19:checked ~ .table .d20box .dl-19{display:block}
+#op-19:checked ~ .table .op-card .oc-19{display:flex}
+#op-20:checked ~ .table .d20box .dl-20{display:block}
+#op-20:checked ~ .table .op-card .oc-20{display:flex}
+.d20.dl svg{animation:roll .9s cubic-bezier(.25,.7,.25,1)}
+.dl-1 svg{animation:roll .9s cubic-bezier(.25,.7,.25,1), shake .5s .9s}
+.d20{-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none}
 .op-card{background:var(--night-2);border:1px solid rgba(242,247,249,.08);border-radius:22px;padding:30px;min-height:260px;display:flex;flex-direction:column;gap:16px;justify-content:center;min-width:0;position:relative;overflow:hidden}
 .op-card .k{font-family:var(--mono);font-size:12px;color:var(--half);display:flex;gap:10px;align-items:center}
 .op-card .crit-lbl{font-family:var(--mono);font-size:11px;background:var(--mindaro);color:var(--holly);padding:3px 8px;border-radius:6px}
@@ -448,7 +556,7 @@ footer a:hover{color:var(--ink)}
   <div class="in">
     <a class="logo" href="#topo" aria-label="Ismael Rodrigues, início"><i>IR</i>Ismael Rodrigues</a>
     <nav class="links" aria-label="Seções">
-      <a href="#sobre">Origem</a><a href="#talentos">Talentos</a><a href="#ia">IA com método</a><a href="#metodo">Como trabalho</a><a href="#planos">Planos</a><a href="#dado">Opiniões</a>
+      <a href="#sobre">Origem</a><a href="#talentos">Talentos</a><a href="#estudos">Estudos</a><a href="#metodo">Como trabalho</a><a href="#planos">Planos</a><a href="#dado">Opiniões</a>
     </nav>
     <a class="btn btn-acc wa mag" href="https://wa.me/5537999344500?text=Oi%2C%20Ismael%21%20Vim%20pelo%20site%20e%20quero%20o%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener">Falar comigo</a>
   </div>
@@ -461,7 +569,7 @@ footer a:hover{color:var(--ink)}
     <div class="hero-txt">
       <div class="tag" style="color:var(--half)">Goiânia e região · Meta Ads · Google Ads</div>
       <h1 id="h1" style="margin-top:20px" data-split>Seu negócio local vendendo mais, com <em class="s">método</em> e sem promessa vazia</h1>
-      <p class="sub">Cuido dos anúncios, do perfil e do conteúdo de restaurantes e negócios locais, com dados reais, inteligência artificial usada de forma profissional e um relatório claro toda semana.</p>
+      <p class="sub">Cuido dos anúncios, do perfil e do conteúdo de restaurantes e negócios locais, com dados reais, método e um relatório claro toda semana.</p>
       <div class="cta">
         <a class="btn btn-acc wa mag" href="https://wa.me/5537999344500?text=Oi%2C%20Ismael%21%20Vim%20pelo%20site%20e%20quero%20o%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener">Quero um diagnóstico gratuito <span class="ar" aria-hidden="true">→</span></a>
         <a class="btn btn-ghost mag" href="#metodo">Ver como eu trabalho</a>
@@ -543,26 +651,28 @@ footer a:hover{color:var(--ink)}
   </div>
 </section>
 
-<section class="ai dark" id="ia" aria-labelledby="h-ia" data-xp="150" data-ach="Grimório da IA lido">
+<section class="ai dark" id="estudos" aria-labelledby="h-ia" data-xp="150" data-ach="Grimório de estudos aberto">
   <div class="spot" aria-hidden="true"></div>
   <div class="in" style="position:relative">
     <div class="head rv">
-      <div><span class="chap">Capítulo III · O grimório</span><div class="tag">IA com método</div><h2 id="h-ia" style="margin-top:14px">Qualquer um abre o chat, mas usar IA como <em class="s" style="color:var(--mindaro)">ferramenta de trabalho</em> pede método</h2></div>
-      <p>Pedir para a IA dar uma olhada no seu perfil e aceitar a primeira resposta qualquer pessoa faz, e o resultado costuma servir para qualquer negócio. Eu trabalho com os dados exportados das plataformas, instruções detalhadas sobre o seu negócio e critérios de análise definidos antes, e confiro tudo o que vai para o ar.</p>
+      <div><span class="chap">Capítulo III · O grimório</span><div class="tag">Sempre estudando</div><h2 id="h-ia" style="margin-top:14px">Eu não paro de <em class="s" style="color:var(--mindaro)">estudar</em>, porque o seu cliente também não para de mudar</h2></div>
+      <p>Marketing que funcionava há um ano hoje já não funciona do mesmo jeito, então estudar faz parte do meu trabalho tanto quanto subir uma campanha. Ultimamente, o que mais tem ocupado o meu caderno é entender como a inteligência artificial pode deixar um negócio local mais organizado, mais rápido no atendimento e mais preciso nas decisões.</p>
     </div>
-    <div class="ai-grid">
-      <div class="term rv" role="img" aria-label="Simulação de um diagnóstico feito com dados reais e IA">
-        <div class="term-top"><b></b><b></b><b></b><span>diagnóstico · simulação</span></div>
-        <div class="term-body" id="term" aria-hidden="true"><div class="ln"><span class="c-mut">$ importar --fonte gerenciador_meta.csv --periodo 30d</span></div><div class="ln"><span>  1.284 linhas importadas ........ </span><span class="c-teal">ok</span></div><div class="ln"><span class="c-mut">$ contexto --negocio hamburgueria --raio 4km --ticket R$48</span></div><div class="ln"><span class="c-mut">$ analisar --criterios custo_por_conversa,horario,publico</span></div><div class="ln"><span class="c-mut"> </span></div><div class="ln"><span class="c-acc">→ 61% das conversas chegam entre 18h e 21h</span></div><div class="ln"><span class="c-acc">→ o público de 35 a 44 anos custa 2x menos por conversa</span></div><div class="ln"><span class="c-warn">! 38% da verba roda de madrugada, sem retorno</span></div><div class="ln"><span class="c-mut"> </span></div><div class="ln"><span>revisão humana ................... </span><span class="c-teal">conferido</span></div><div class="ln"><span class="c-acc">✓ 3 ajustes prontos para o relatório da semana</span></div><div class="ln"><span>  1. concentrar a verba entre 17h e 22h</span></div><div class="ln"><span>  2. testar dois anúncios para 35–44 anos</span></div><div class="ln"><span>  3. pausar a veiculação de madrugada</span></div></div>
-        <div class="term-foot">Exemplo ilustrativo com uma hamburgueria fictícia</div>
+    <div class="study-grid">
+      <div class="term rv" role="img" aria-label="Diário de estudos do Ismael em formato de terminal: estudando IA aplicada a negócios locais, cursando Publicidade e Propaganda, lendo clássicos da publicidade e com as duas certificações da Subido concluídas">
+        <div class="term-top"><b></b><b></b><b></b><span>diario_de_estudos.log · out/2026</span></div>
+        <div class="term-body" id="term" aria-hidden="true"><div class="ln"><span class="c-mut">$ ismael --status</span></div><div class="ln"><span>  classe: estrategista · nível 19 · origem: Minas Gerais</span></div><div class="ln"><span class="c-mut">$ estudos --agora</span></div><div class="ln"><span>  IA aplicada a negócios locais  </span><span class="c-acc">[█████░░░░░] 55%</span></div><div class="ln"><span>  Publicidade e Propaganda       </span><span class="c-teal">cursando</span></div><div class="ln"><span>  clássicos da publicidade       </span><span class="c-teal">lendo</span></div><div class="ln"><span>  certificações Subido (2/2)     </span><span class="c-acc">[██████████] concluído</span></div><div class="ln"><span class="c-mut"> </span></div><div class="ln"><span class="c-mut">$ aplicar --no-seu-negocio</span></div><div class="ln"><span class="c-acc">  ✓ relatórios mais claros, toda semana</span></div><div class="ln"><span class="c-acc">  ✓ mais versões de anúncio testadas no mesmo tempo</span></div><div class="ln"><span class="c-acc">  ✓ ideias novas antes do seu concorrente</span></div><div class="ln"><span>  revisão humana em tudo ......... </span><span class="c-teal">sempre</span></div></div>
       </div>
-      <div class="versus rv" id="versus">
-        <input type="radio" name="vs" id="vs-am" class="sr">
-        <input type="radio" name="vs" id="vs-pro" class="sr" checked>
-        <div class="switch"><span class="pill" aria-hidden="true"></span><label for="vs-am">No improviso</label><label for="vs-pro">Do jeito que eu uso</label></div>
-        <ul class="vs-list vs-am"><li><span class="ic">✕</span><span class="t">Cola um print do perfil no chat e pede &quot;analisa aí&quot;</span></li><li><span class="ic">✕</span><span class="t">Aceita a primeira resposta, mesmo quando ela serve para qualquer negócio</span></li><li><span class="ic">✕</span><span class="t">Publica o texto do jeito que saiu, com cara de robô</span></li><li><span class="ic">✕</span><span class="t">Coloca dados do cliente em qualquer ferramenta, sem cuidado</span></li><li><span class="ic">✕</span><span class="t">Deixa a IA decidir onde o dinheiro vai</span></li></ul>
-        <ul class="vs-list vs-pro"><li><span class="ic">01</span><span class="t">Parte dos dados exportados do Gerenciador de Anúncios e do Google, não de prints soltos</span></li><li><span class="ic">02</span><span class="t">Dá à IA o contexto do negócio: público, ticket, região, concorrência e objetivo</span></li><li><span class="ic">03</span><span class="t">Define os critérios de análise antes, para comparar semana com semana</span></li><li><span class="ic">04</span><span class="t">Revisa cada texto com a voz da sua marca antes de ir para o ar</span></li><li><span class="ic">05</span><span class="t">Confere os números com as plataformas e decide junto com você</span></li></ul>
-        <p class="vs-note">Toque nos botões para comparar. A IA acelera a análise e a produção, e as decisões sobre o seu dinheiro continuam sendo minhas e suas.</p>
+      <div class="gain rv">
+        <span class="k">o que isso muda para você</span>
+        <h3>O estudo vira prática no seu negócio, sempre com o meu olhar antes de ir para o ar</h3>
+        <ul>
+          <li>Relatórios mais claros e entregues mais rápido</li>
+          <li>Mais versões de anúncio testadas no mesmo tempo</li>
+          <li>Ideias novas trazidas para você antes do seu concorrente</li>
+          <li>Nada de ferramenta no automático: cada decisão passa por mim</li>
+        </ul>
+        <p class="note">A estratégia, o relacionamento e as decisões sobre o seu dinheiro continuam sendo trabalho de gente.</p>
       </div>
     </div>
   </div>
@@ -579,10 +689,10 @@ footer a:hover{color:var(--ink)}
     </div>
     <div class="in" style="overflow:visible">
       <div class="camp-track" id="camp-track">
-        <article class="quest"><span class="no">01</span><span class="k">Missão de reconhecimento</span><h3>Diagnóstico</h3><p>Analiso o seu Instagram, o Google, as avaliações e a concorrência, e te entrego os três problemas que mais estão custando clientes.</p><span class="loot"><b>recompensa</b>um mapa claro do que arrumar primeiro</span><span class="ai-t">IA: cruza avaliações e concorrência</span></article>
-        <article class="quest"><span class="no">02</span><span class="k">Preparar o acampamento</span><h3>Estrutura</h3><p>Arrumamos o perfil, o Google Meu Negócio e o link de pedido ou de agendamento antes de colocar dinheiro em anúncio.</p><span class="loot"><b>recompensa</b>um caminho de compra sem buracos</span><span class="ai-t">IA: rascunhos que eu reviso</span></article>
-        <article class="quest"><span class="no">03</span><span class="k">Entrar na masmorra</span><h3>Lançamento</h3><p>Campanhas no Meta e no Google com uma meta combinada com você, como pedidos, mensagens ou reservas.</p><span class="loot"><b>recompensa</b>clientes novos chegando</span><span class="ai-t">IA: variações de anúncio para testar</span></article>
-        <article class="quest"><span class="no">04</span><span class="k">Voltar à taverna e contar a história</span><h3>Leitura e ajuste</h3><p>Toda semana você recebe um relatório em português claro, com o que funcionou, o que não funcionou e o que muda em seguida.</p><span class="loot"><b>recompensa</b>decisões com números, toda semana</span><span class="ai-t">IA: organiza os números, eu interpreto</span></article>
+        <article class="quest"><span class="no">01</span><span class="k">Missão de reconhecimento</span><h3>Diagnóstico</h3><p>Analiso o seu Instagram, o Google, as avaliações e a concorrência, e te entrego os três problemas que mais estão custando clientes.</p><span class="loot"><b>recompensa</b>um mapa claro do que arrumar primeiro</span></article>
+        <article class="quest"><span class="no">02</span><span class="k">Preparar o acampamento</span><h3>Estrutura</h3><p>Arrumamos o perfil, o Google Meu Negócio e o link de pedido ou de agendamento antes de colocar dinheiro em anúncio.</p><span class="loot"><b>recompensa</b>um caminho de compra sem buracos</span></article>
+        <article class="quest"><span class="no">03</span><span class="k">Entrar na masmorra</span><h3>Lançamento</h3><p>Campanhas no Meta e no Google com uma meta combinada com você, como pedidos, mensagens ou reservas.</p><span class="loot"><b>recompensa</b>clientes novos chegando</span></article>
+        <article class="quest"><span class="no">04</span><span class="k">Voltar à taverna e contar a história</span><h3>Leitura e ajuste</h3><p>Toda semana você recebe um relatório em português claro, com o que funcionou, o que não funcionou e o que muda em seguida.</p><span class="loot"><b>recompensa</b>decisões com números, toda semana</span></article>
       </div>
     </div>
   </div>
@@ -626,35 +736,23 @@ footer a:hover{color:var(--ink)}
 <section class="dice dark" id="dado" aria-labelledby="h-dado" data-xp="100" data-ach="Chegou à mesa de jogo">
   <div class="spot" aria-hidden="true"></div>
   <div class="in" style="position:relative">
+    <input type="radio" name="op" id="op-1" class="sr" tabindex="-1"><input type="radio" name="op" id="op-2" class="sr" tabindex="-1"><input type="radio" name="op" id="op-3" class="sr" tabindex="-1"><input type="radio" name="op" id="op-4" class="sr" tabindex="-1"><input type="radio" name="op" id="op-5" class="sr" tabindex="-1"><input type="radio" name="op" id="op-6" class="sr" tabindex="-1"><input type="radio" name="op" id="op-7" class="sr" tabindex="-1"><input type="radio" name="op" id="op-8" class="sr" tabindex="-1"><input type="radio" name="op" id="op-9" class="sr" tabindex="-1"><input type="radio" name="op" id="op-10" class="sr" tabindex="-1"><input type="radio" name="op" id="op-11" class="sr" tabindex="-1"><input type="radio" name="op" id="op-12" class="sr" tabindex="-1"><input type="radio" name="op" id="op-13" class="sr" tabindex="-1"><input type="radio" name="op" id="op-14" class="sr" tabindex="-1"><input type="radio" name="op" id="op-15" class="sr" tabindex="-1"><input type="radio" name="op" id="op-16" class="sr" tabindex="-1"><input type="radio" name="op" id="op-17" class="sr" tabindex="-1"><input type="radio" name="op" id="op-18" class="sr" tabindex="-1"><input type="radio" name="op" id="op-19" class="sr" tabindex="-1"><input type="radio" name="op" id="op-20" class="sr" tabindex="-1" checked>
     <div class="rv">
       <span class="chap">Capítulo VI · A mesa</span>
       <div class="tag">Opiniões que ninguém pediu</div>
       <h2 id="h-dado" style="margin-top:14px">Role o <em class="s">d20</em></h2>
       <p class="lead">Marketing com opinião, porque em cima do muro ninguém aprende nada. Cada número do dado guarda uma das minhas, e tirar 20 tem prêmio.</p>
-      <div class="found"><span class="lbl" id="found-lbl">1 de 20 opiniões descobertas</span><div class="pips" id="pips" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i><i>11</i><i>12</i><i>13</i><i>14</i><i>15</i><i>16</i><i>17</i><i>18</i><i>19</i><i class="crit">20</i></div></div>
+      <div class="found"><span class="lbl" id="found-lbl"><span class="fl fl-1">1 de 20 opiniões descobertas</span><span class="fl fl-2">2 de 20 opiniões descobertas</span><span class="fl fl-3">3 de 20 opiniões descobertas</span><span class="fl fl-4">4 de 20 opiniões descobertas</span><span class="fl fl-5">5 de 20 opiniões descobertas</span><span class="fl fl-6">6 de 20 opiniões descobertas</span><span class="fl fl-7">7 de 20 opiniões descobertas</span><span class="fl fl-8">8 de 20 opiniões descobertas</span><span class="fl fl-9">9 de 20 opiniões descobertas</span><span class="fl fl-10">10 de 20 opiniões descobertas</span><span class="fl fl-11">11 de 20 opiniões descobertas</span><span class="fl fl-12">12 de 20 opiniões descobertas</span><span class="fl fl-13">13 de 20 opiniões descobertas</span><span class="fl fl-14">14 de 20 opiniões descobertas</span><span class="fl fl-15">15 de 20 opiniões descobertas</span><span class="fl fl-16">16 de 20 opiniões descobertas</span><span class="fl fl-17">17 de 20 opiniões descobertas</span><span class="fl fl-18">18 de 20 opiniões descobertas</span><span class="fl fl-19">19 de 20 opiniões descobertas</span><span class="fl fl-20">20 de 20 opiniões descobertas</span></span><div class="pips" id="pips" aria-hidden="true"><i class="p1">1</i><i class="p2">2</i><i class="p3">3</i><i class="p4">4</i><i class="p5">5</i><i class="p6">6</i><i class="p7">7</i><i class="p8">8</i><i class="p9">9</i><i class="p10">10</i><i class="p11">11</i><i class="p12">12</i><i class="p13">13</i><i class="p14">14</i><i class="p15">15</i><i class="p16">16</i><i class="p17">17</i><i class="p18">18</i><i class="p19">19</i><i class="p20">20</i></div></div>
     </div>
     <div class="table rv">
+      
       <div class="d20box">
         <div class="burst" id="burst" aria-hidden="true"></div>
-        <button class="d20" id="d20" type="button" aria-label="Rolar o dado e ler outra opinião">
-          <svg viewBox="0 0 100 100" aria-hidden="true">
-            <polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/>
-            <polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/>
-            <polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/>
-            <polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/>
-            <polygon points="50,33 73,81 27,81" fill="#DAFC92"/>
-            <polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/>
-            <polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/>
-            <polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/>
-            <text class="num" id="d20n" x="50" y="68" text-anchor="middle" fill="#02261E">20</text>
-          </svg>
-        </button>
-        <span class="hint">clique ou aperte <kbd>espaço</kbd></span>
+        <label for="op-9" class="d20 dl dl-1" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">1</text></svg></label><label for="op-18" class="d20 dl dl-2" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">2</text></svg></label><label for="op-17" class="d20 dl dl-3" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">3</text></svg></label><label for="op-19" class="d20 dl dl-4" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">4</text></svg></label><label for="op-11" class="d20 dl dl-5" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">5</text></svg></label><label for="op-15" class="d20 dl dl-6" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">6</text></svg></label><label for="op-13" class="d20 dl dl-7" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">7</text></svg></label><label for="op-12" class="d20 dl dl-8" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">8</text></svg></label><label for="op-14" class="d20 dl dl-9" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">9</text></svg></label><label for="op-20" class="d20 dl dl-10" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">10</text></svg></label><label for="op-16" class="d20 dl dl-11" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">11</text></svg></label><label for="op-3" class="d20 dl dl-12" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">12</text></svg></label><label for="op-2" class="d20 dl dl-13" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">13</text></svg></label><label for="op-4" class="d20 dl dl-14" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">14</text></svg></label><label for="op-10" class="d20 dl dl-15" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">15</text></svg></label><label for="op-1" class="d20 dl dl-16" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">16</text></svg></label><label for="op-6" class="d20 dl dl-17" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">17</text></svg></label><label for="op-5" class="d20 dl dl-18" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">18</text></svg></label><label for="op-8" class="d20 dl dl-19" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">19</text></svg></label><label for="op-7" class="d20 dl dl-20" role="button" tabindex="0" aria-label="Rolar o dado e ler outra opinião"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 94,26 94,74 50,98 6,74 6,26" fill="#89C9C9"/><polygon points="50,2 94,26 50,33 6,26" fill="#F2F7F9" fill-opacity=".35"/><polygon points="50,33 94,26 94,74 73,81" fill="#02261E" fill-opacity=".18"/><polygon points="50,33 6,26 6,74 27,81" fill="#F2F7F9" fill-opacity=".12"/><polygon points="50,33 73,81 27,81" fill="#DAFC92"/><polygon points="27,81 73,81 50,98" fill="#02261E" fill-opacity=".28"/><polygon points="6,74 27,81 50,98" fill="#02261E" fill-opacity=".14"/><polygon points="94,74 73,81 50,98" fill="#02261E" fill-opacity=".36"/><text class="num" x="50" y="68" text-anchor="middle" fill="#02261E">20</text></svg></label>
+        <span class="hint">toque no dado para rolar</span>
       </div>
       <div class="op-card" aria-live="polite">
-        <span class="k"><span id="op-k">Opinião nº 20</span><span class="crit-lbl" id="crit" hidden>acerto crítico</span></span>
-        <blockquote id="op-q">Ser diferente virou tão obrigatório que todo mundo acabou ficando igual.</blockquote>
-        <p id="op-p">Quem passa o tempo inteiro olhando a concorrência acaba construindo a marca em função dos outros e nunca constrói a própria.</p>
+        <div class="oc oc-1"><span class="k"><span>Opinião nº 1</span><span class="crit-lbl f">falha crítica</span></span><blockquote>Falha crítica: postar todo dia sem saber para quem.</blockquote><p>Constância sem direção só gasta energia. Primeiro defina com quem você está falando, depois decida quantas vezes vai falar.</p></div><div class="oc oc-2"><span class="k"><span>Opinião nº 2</span></span><blockquote>O seu concorrente não é só a loja do lado.</blockquote><p>Uma clínica disputa dinheiro com uma viagem, e a Cacau Show disputa com o Boticário. Concorrência é tudo o que pode levar o dinheiro do seu cliente para outro lugar.</p></div><div class="oc oc-3"><span class="k"><span>Opinião nº 3</span></span><blockquote>Eu não concordo com tudo da vaca roxa.</blockquote><p>Ser notável ajuda, mas ninguém compra só porque algo é diferente. O cliente compra o que resolve o problema dele, de um jeito em que ele confia.</p></div><div class="oc oc-4"><span class="k"><span>Opinião nº 4</span></span><blockquote>Ninguém monta num cavalo no primeiro dia.</blockquote><p>Confiança vem antes da venda, e anúncio que pede compra para quem nunca ouviu falar de você é como pedir alguém em casamento no primeiro encontro.</p></div><div class="oc oc-5"><span class="k"><span>Opinião nº 5</span></span><blockquote>Desconfie de quem promete faturamento.</blockquote><p>O resultado depende do produto, do atendimento e do preço, e quem promete número está vendendo esperança no lugar de trabalho.</p></div><div class="oc oc-6"><span class="k"><span>Opinião nº 6</span></span><blockquote>Recompensa rápida cria hábito, no cachorro e no cliente.</blockquote><p>Quem adestra cão sabe que o reforço precisa vir na hora e sempre do mesmo jeito, e programa de fidelidade que demora para recompensar não cria hábito nenhum.</p></div><div class="oc oc-7"><span class="k"><span>Opinião nº 7</span></span><blockquote>Adiar o marketing também tem preço.</blockquote><p>Seis meses pensando no assunto são seis meses de clientes indo para o concorrente que decidiu antes de você.</p></div><div class="oc oc-8"><span class="k"><span>Opinião nº 8</span></span><blockquote>Procurei um viveiro para arara e não achei.</blockquote><p>Quando você procura algo e ninguém vende do jeito certo, está diante de um nicho, e muitos bons negócios locais nascem exatamente assim.</p></div><div class="oc oc-9"><span class="k"><span>Opinião nº 9</span></span><blockquote>Depender só do app de delivery é guardar o seu cliente na casa dos outros.</blockquote><p>O app traz pedidos, mas a relação com o cliente fica com ele, e ter um canal próprio é o que te dá margem e independência.</p></div><div class="oc oc-10"><span class="k"><span>Opinião nº 10</span></span><blockquote>Curtida não paga boleto.</blockquote><p>Seguidor e alcance são o meio do caminho, e a pergunta que importa é quantos clientes chegaram por causa disso.</p></div><div class="oc oc-11"><span class="k"><span>Opinião nº 11</span></span><blockquote>IA acelera quem já tem estratégia.</blockquote><p>Quem não sabe o que quer dizer só vai dizer nada mais rápido, então o pensamento vem primeiro e a ferramenta depois.</p></div><div class="oc oc-12"><span class="k"><span>Opinião nº 12</span></span><blockquote>Avaliação no Google é a vitrine que mais vende e a que menos recebe cuidado.</blockquote><p>Antes de visitar um restaurante muita gente olha a nota e lê as avaliações, e pedir avaliação deveria ser rotina.</p></div><div class="oc oc-13"><span class="k"><span>Opinião nº 13</span></span><blockquote>Perfil abandonado parece negócio fechado.</blockquote><p>Se o último post tem um mês, o cliente fica em dúvida se você ainda está aberto, e constância também é sinal de vida.</p></div><div class="oc oc-14"><span class="k"><span>Opinião nº 14</span></span><blockquote>Fórmula pronta de marketing é ficha de personagem copiada.</blockquote><p>Funcionou na campanha de outra pessoa, mas no seu negócio os atributos são outros.</p></div><div class="oc oc-15"><span class="k"><span>Opinião nº 15</span></span><blockquote>O líder sempre leva o casco azul.</blockquote><p>No Mario Kart quem está em primeiro vira alvo, e no mercado acontece o mesmo: chegar ao topo é metade do trabalho e se manter lá é a outra metade.</p></div><div class="oc oc-16"><span class="k"><span>Opinião nº 16</span></span><blockquote>Humildade também é estratégia.</blockquote><p>Quem acha que já sabe tudo para de testar, e quem para de testar começa a perder dinheiro sem perceber.</p></div><div class="oc oc-17"><span class="k"><span>Opinião nº 17</span></span><blockquote>Seu cliente não precisa saber o que é CPM.</blockquote><p>Se quem cuida do seu marketing não explica os números em português claro, o problema não está em você.</p></div><div class="oc oc-18"><span class="k"><span>Opinião nº 18</span></span><blockquote>Clareza vende mais que criatividade.</blockquote><p>Um anúncio criativo que ninguém entende em três segundos perde para o simples que diz o que você vende, onde e por quanto.</p></div><div class="oc oc-19"><span class="k"><span>Opinião nº 19</span></span><blockquote>Pessimismo não constrói negócio nenhum.</blockquote><p>Todo empreendedor que eu admiro acredita que amanhã pode ser melhor e trabalha para isso acontecer.</p></div><div class="oc oc-20"><span class="k"><span>Opinião nº 20</span><span class="crit-lbl">acerto crítico</span></span><blockquote>Ser diferente virou tão obrigatório que todo mundo acabou ficando igual.</blockquote><p>Quem passa o tempo inteiro olhando a concorrência acaba construindo a marca em função dos outros e nunca constrói a própria.</p></div>
         <a href="https://www.instagram.com/eu.ismaeljr/" target="_blank" rel="noopener">Mais opiniões no @eu.ismaeljr ↗</a>
       </div>
     </div>
@@ -665,10 +763,9 @@ footer a:hover{color:var(--ink)}
   <div class="in faq-grid">
     <div class="rv"><span class="chap">Capítulo VII · Perguntas na taverna</span><div class="tag">Dúvidas</div><h2 id="h-faq" style="margin-top:14px">O que todo dono de negócio me <em class="s">pergunta</em></h2></div>
     <div class="rv">
-      <details><summary>Quanto preciso investir em anúncios?</summary><p>Depende do objetivo e da sua cidade. Para um negócio local eu costumo recomendar começar entre R$600 e R$1.500 por mês, pagos direto ao Meta ou ao Google, e a gente define esse valor juntos no diagnóstico.</p></details>
+      <details><summary>Quanto preciso investir em anúncios?</summary><p>Não existe um valor único, porque a verba depende da sua região, da área do seu negócio, da concorrência e do objetivo que a gente definir. No diagnóstico eu analiso tudo isso e te passo uma recomendação feita para o seu caso, e a verba é paga direto ao Meta ou ao Google, separada do meu trabalho.</p></details>
       <details><summary>Em quanto tempo vejo resultado?</summary><p>As primeiras semanas servem para as plataformas aprenderem quem é o seu cliente, e os números costumam estabilizar entre quatro e oito semanas. Você acompanha tudo pelo relatório semanal desde o primeiro dia.</p></details>
       <details><summary>Você garante faturamento?</summary><p>Não garanto, e desconfie de quem garante, porque o resultado também depende do produto, do atendimento e do preço. O que eu garanto é método, transparência e metas acompanhadas toda semana.</p></details>
-      <details><summary>Se eu mesmo posso usar o ChatGPT, por que contratar você?</summary><p>Porque a ferramenta sozinha só devolve o que recebe. Eu junto os dados reais das suas campanhas, o contexto do seu negócio e critérios de análise testados, e ainda confiro cada resposta antes de virar decisão. É a diferença entre ter uma calculadora e saber fazer a conta.</p></details>
       <details><summary>Atende fora de Goiânia?</summary><p>Atendo. O trabalho é remoto, com reuniões por vídeo, e Goiânia e região são o meu foco principal.</p></details>
     </div>
   </div>
@@ -805,29 +902,12 @@ function growTree(){
   setTimeout(() => tree.classList.remove("grow"), 180 * order.length + 1100);
 }
 
-/* terminal */
-const SCRIPT = [
-  ["c-mut","$ importar --fonte gerenciador_meta.csv --periodo 30d"],
-  ["","  1.284 linhas importadas ........ ","c-teal","ok"],
-  ["c-mut","$ contexto --negocio hamburgueria --raio 4km --ticket R$48"],
-  ["c-mut","$ analisar --criterios custo_por_conversa,horario,publico"],
-  ["c-mut"," "],
-  ["c-acc","→ 61% das conversas chegam entre 18h e 21h"],
-  ["c-acc","→ o público de 35 a 44 anos custa 2x menos por conversa"],
-  ["c-warn","! 38% da verba roda de madrugada, sem retorno"],
-  ["c-mut"," "],
-  ["","revisão humana ................... ","c-teal","conferido"],
-  ["c-acc","✓ 3 ajustes prontos para o relatório da semana"],
-  ["","  1. concentrar a verba entre 17h e 22h"],
-  ["","  2. testar dois anúncios para 35–44 anos"],
-  ["","  3. pausar a veiculação de madrugada"],
-];
+/* terminal: diário de estudos digitando */
+const SCRIPT = [["c-mut", "$ ismael --status"], ["", "  classe: estrategista · nível 19 · origem: Minas Gerais"], ["c-mut", "$ estudos --agora"], ["", "  IA aplicada a negócios locais  ", "c-acc", "[█████░░░░░] 55%"], ["", "  Publicidade e Propaganda       ", "c-teal", "cursando"], ["", "  clássicos da publicidade       ", "c-teal", "lendo"], ["", "  certificações Subido (2/2)     ", "c-acc", "[██████████] concluído"], ["c-mut", " "], ["c-mut", "$ aplicar --no-seu-negocio"], ["c-acc", "  ✓ relatórios mais claros, toda semana"], ["c-acc", "  ✓ mais versões de anúncio testadas no mesmo tempo"], ["c-acc", "  ✓ ideias novas antes do seu concorrente"], ["", "  revisão humana em tudo ......... ", "c-teal", "sempre"]];
 const term = $("term");
-function lineEl(l){ const d = document.createElement("div"); d.className = "ln"; for (let i = 0; i < l.length; i += 2){ const s = document.createElement("span"); if (l[i]) s.className = l[i]; s.textContent = l[i+1] || ""; d.append(s); } return d; }
-function renderAll(){ term.innerHTML = ""; SCRIPT.forEach(l => term.append(lineEl(l))); }
 let typing = false;
 async function typeLoop(){
-  if (reduce){ renderAll(); return; } if (typing) return; typing = true;
+  if (!term || reduce || typing) return; typing = true;
   while (true){
     term.innerHTML = "";
     for (const l of SCRIPT){
@@ -835,79 +915,36 @@ async function typeLoop(){
       const caret = document.createElement("span"); caret.className = "caret";
       for (let i = 0; i < l.length; i += 2){
         const s = document.createElement("span"); if (l[i]) s.className = l[i]; d.append(s, caret);
-        const txt = l[i+1] || ""; const sp = txt.trim() === "" ? 0 : (txt.startsWith("$") ? 20 : 13);
+        const txt = l[i+1] || ""; const sp = txt.trim() === "" ? 0 : (txt.startsWith("$") ? 32 : 12);
         for (const ch of txt){ s.textContent += ch; if (sp) await wait(sp); }
-        if (l.length > 2 && i === 0) await wait(420);
+        if (l.length > 2 && i === 0) await wait(260);
       }
-      caret.remove(); await wait(l[1].trim() === "" ? 120 : 260);
+      caret.remove(); await wait(l[1].startsWith("$") ? 380 : 160);
     }
     const c = document.createElement("span"); c.className = "caret"; term.lastChild.append(c);
-    await wait(7000);
+    await wait(8000);
   }
 }
-renderAll();
 
-/* comparação: funciona só com CSS; o JS só dá o XP */
-let vsTried = false;
-$("vs-am").addEventListener("change", () => { if (!vsTried){ vsTried = true; gain(40, "Comparou os dois jeitos de usar IA"); } });
+/* d20: o dado funciona só com HTML e CSS; o JS conta as opiniões, dá XP e solta confete */
+const pips = $("pips"), burst = $("burst");
+const seen = new Set([20]); let rolls = 0;
 
-/* d20 */
-const OPS = [
-  ["Falha crítica: postar todo dia sem saber para quem.","Constância sem direção só gasta energia. Primeiro defina com quem você está falando, depois decida quantas vezes vai falar."],
-  ["O seu concorrente não é só a loja do lado.","Uma clínica disputa dinheiro com uma viagem, e a Cacau Show disputa com o Boticário. Concorrência é tudo o que pode levar o dinheiro do seu cliente para outro lugar."],
-  ["Eu não concordo com tudo da vaca roxa.","Ser notável ajuda, mas ninguém compra só porque algo é diferente. O cliente compra o que resolve o problema dele, de um jeito em que ele confia."],
-  ["Ninguém monta num cavalo no primeiro dia.","Confiança vem antes da venda, e anúncio que pede compra para quem nunca ouviu falar de você é como pedir alguém em casamento no primeiro encontro."],
-  ["Desconfie de quem promete faturamento.","O resultado depende do produto, do atendimento e do preço, e quem promete número está vendendo esperança no lugar de trabalho."],
-  ["Recompensa rápida cria hábito, no cachorro e no cliente.","Quem adestra cão sabe que o reforço precisa vir na hora e sempre do mesmo jeito, e programa de fidelidade que demora para recompensar não cria hábito nenhum."],
-  ["Adiar o marketing também tem preço.","Seis meses pensando no assunto são seis meses de clientes indo para o concorrente que decidiu antes de você."],
-  ["Procurei um viveiro para arara e não achei.","Quando você procura algo e ninguém vende do jeito certo, está diante de um nicho, e muitos bons negócios locais nascem exatamente assim."],
-  ["Depender só do app de delivery é guardar o seu cliente na casa dos outros.","O app traz pedidos, mas a relação com o cliente fica com ele, e ter um canal próprio é o que te dá margem e independência."],
-  ["Curtida não paga boleto.","Seguidor e alcance são o meio do caminho, e a pergunta que importa é quantos clientes chegaram por causa disso."],
-  ["IA acelera quem já tem estratégia.","Quem não sabe o que quer dizer só vai dizer nada mais rápido, então o pensamento vem primeiro e a ferramenta depois."],
-  ["Avaliação no Google é a vitrine que mais vende e a que menos recebe cuidado.","Antes de visitar um restaurante muita gente olha a nota e lê as avaliações, e pedir avaliação deveria ser rotina."],
-  ["Perfil abandonado parece negócio fechado.","Se o último post tem um mês, o cliente fica em dúvida se você ainda está aberto, e constância também é sinal de vida."],
-  ["Fórmula pronta de marketing é ficha de personagem copiada.","Funcionou na campanha de outra pessoa, mas no seu negócio os atributos são outros."],
-  ["O líder sempre leva o casco azul.","No Mario Kart quem está em primeiro vira alvo, e no mercado acontece o mesmo: chegar ao topo é metade do trabalho e se manter lá é a outra metade."],
-  ["Humildade também é estratégia.","Quem acha que já sabe tudo para de testar, e quem para de testar começa a perder dinheiro sem perceber."],
-  ["Seu cliente não precisa saber o que é CPM.","Se quem cuida do seu marketing não explica os números em português claro, o problema não está em você."],
-  ["Clareza vende mais que criatividade.","Um anúncio criativo que ninguém entende em três segundos perde para o simples que diz o que você vende, onde e por quanto."],
-  ["Pessimismo não constrói negócio nenhum.","Todo empreendedor que eu admiro acredita que amanhã pode ser melhor e trabalha para isso acontecer."],
-  ["Ser diferente virou tão obrigatório que todo mundo acabou ficando igual.","Quem passa o tempo inteiro olhando a concorrência acaba construindo a marca em função dos outros e nunca constrói a própria."]
-];
-const pips = $("pips");
-const seen = new Set([20]); function drawSeen(){ [...pips.children].forEach((p, i) => { const n = i + 1; p.className = seen.has(n) ? (n === 20 ? "crit" : "on") : ""; }); $("found-lbl").textContent = seen.size + " de 20 opiniões descobertas"; }
-drawSeen();
-const d20 = $("d20"), d20n = $("d20n"), qk = $("op-k"), qq = $("op-q"), qp = $("op-p"), crit = $("crit"), burst = $("burst");
-let last = 20, busy = false, rolls = 0;
 function confetti(){ burst.innerHTML = ""; const cols = ["#DAFC92","#89C9C9","#F2F7F9"]; for (let i = 0; i < 26; i++){ const b = document.createElement("i"); const a = Math.random() * Math.PI * 2, r = 60 + Math.random() * 90; b.style.setProperty("--x", Math.cos(a) * r + "px"); b.style.setProperty("--y", Math.sin(a) * r + "px"); b.style.setProperty("--r", (Math.random() * 540) + "deg"); b.style.background = cols[i % 3]; burst.append(b); } setTimeout(() => burst.innerHTML = "", 1000); }
-function roll(){
-  if (busy) return; busy = true; rolls++;
-  const unseen = []; for (let i = 1; i <= 20; i++) if (!seen.has(i)) unseen.push(i);
-  let n; if (unseen.length && Math.random() < .7) n = unseen[Math.floor(Math.random() * unseen.length)]; else { do { n = 1 + Math.floor(Math.random() * 20); } while (n === last); }
-  last = n;
-  const show = () => {
-    const o = OPS[n - 1]; d20n.textContent = n; qk.textContent = "Opinião nº " + n; qq.textContent = o[0]; qp.textContent = o[1];
-    qq.classList.remove("out"); qp.classList.remove("out");
-    crit.hidden = !(n === 20 || n === 1); crit.textContent = n === 20 ? "acerto crítico" : "falha crítica"; crit.classList.toggle("f", n === 1);
-    if (n === 20 && !reduce) confetti();
-    if (n === 1 && !reduce){ d20.classList.remove("fail"); void d20.offsetWidth; d20.classList.add("fail"); }
-    const isNew = !seen.has(n); seen.add(n); drawSeen(); busy = false;
-    if (rolls === 1) gain(30, "Primeira rolagem");
-    else if (n === 20) gain(50, "Acerto crítico!");
-    else if (n === 1) gain(10, "Falha crítica, mas ainda vale XP");
-    else if (isNew && seen.size === 20) gain(150, "Descobriu todas as 20 opiniões");
-    else if (isNew) gain(10);
-  };
-  if (reduce){ show(); return; }
-  d20.classList.remove("roll","fail"); void d20.offsetWidth; d20.classList.add("roll");
-  qq.classList.add("out"); qp.classList.add("out");
-  let k = 0; const spin = setInterval(() => { d20n.textContent = 1 + Math.floor(Math.random() * 20); if (++k > 10) clearInterval(spin); }, 80);
-  setTimeout(show, 950);
-}
-d20.addEventListener("click", roll);
+document.querySelectorAll('input[name="op"]').forEach(r => r.addEventListener("change", () => {
+  const n = +r.id.slice(3); rolls++; const isNew = !seen.has(n); seen.add(n);
+  if (n === 20 && !reduce) setTimeout(confetti, 600);
+  if (rolls === 1) gain(30, "Primeira rolagem");
+  else if (n === 20) gain(50, "Acerto crítico!");
+  else if (n === 1) gain(10, "Falha crítica, mas ainda vale XP");
+  else if (isNew && seen.size === 20) gain(150, "Descobriu todas as 20 opiniões");
+  else if (isNew) gain(10);
+}));
+document.querySelectorAll(".dl").forEach(l => l.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); l.click(); } }));
+function visibleDie(){ return [...document.querySelectorAll(".dl")].find(l => l.offsetParent !== null); }
 addEventListener("keydown", e => {
-  if (e.code !== "Space" || ["INPUT","TEXTAREA","BUTTON","SUMMARY","A"].includes(document.activeElement.tagName)) return;
-  const r = $("dado").getBoundingClientRect(); if (r.top < innerHeight * .7 && r.bottom > innerHeight * .3){ e.preventDefault(); roll(); }
+  if (e.code !== "Space" || ["INPUT","TEXTAREA","BUTTON","SUMMARY","A","LABEL"].includes(document.activeElement.tagName)) return;
+  const r = $("dado").getBoundingClientRect(); if (r.top < innerHeight * .7 && r.bottom > innerHeight * .3){ e.preventDefault(); const d = visibleDie(); if (d) d.click(); }
 });
 
 /* revelar ao rolar + XP por capítulo (sem IntersectionObserver: funciona em qualquer navegador e dentro de pré-visualizações) */
@@ -925,11 +962,11 @@ const animate = !reduce && !mobile;
 if (animate){
   document.querySelectorAll(".rv").forEach(el => { if (el.getBoundingClientRect().top > innerHeight) { el.classList.add("wait"); when(el, () => el.classList.remove("wait"), .92); } });
   when(sheet, () => setTimeout(() => sheet.classList.add("on"), 250), .85);
-  when(term, typeLoop, .8);
   prepTree(); when(tree, growTree, .75);
+  when(term, typeLoop, .8);
 } else {
   sheet.classList.add("on");
-  if (reduce) renderAll(); else when(term, typeLoop, .9);
+  when(term, typeLoop, .9);
 }
 document.querySelectorAll("main section[data-xp]").forEach(s => { const n = +s.dataset.xp; if (n) when(s, () => gain(n, s.dataset.ach), .6); });
 let ticking = false;

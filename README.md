@@ -25,7 +25,7 @@ Site de página única em HTML puro, sem frameworks nem build. Todo o CSS, o Jav
 |---|---|
 | Sobre | `#sobre` |
 | Árvore de talentos | `#talentos` |
-| IA | `#ia` |
+| Estudos | `#estudos` |
 | Método | `#metodo` |
 | Planos | `#planos` |
 | Dado | `#dado` |
